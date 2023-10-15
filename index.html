@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <a href="#"><img src="img/amazon_logo.png" alt="amazon logo" width="100px"></a>
+            </div>
+            <div class="nav-address border ">
+                <p class="address-first">Hello</p>
+                <div class="add-icon flex">
+                    <i class="fa-sharp fa-solid fa-location-dot"></i>
+                    <p class="address-second">Select your address</p>
+                </div>
+            </div>
+            <div class="nav-search flex">
+                <select name="categories" class="search-menu">
+                    <option value="all" selected>All</option>
+                    <option value="alexa skills" >Alexa Skills</option>
+                    <option value="Amazon Devices" >Amazon Devices</option>
+                    <option value="mazon Fashion" >Amazon Fashion</option>
+                    <option value="Amazon Fresh" >Amazon Fresh</option>
+                    <option value="Amazon Pharmacy" >Amazon Pharmacy</option>
+                    <option value="Appliances" >Appliances</option>
+                    <option value="Apps & Games" >Apps & Games</option>
+                    <option value="Baby" >Baby</option>
+                    <option value="Beauty" >Beauty</option>
+                    <option value="Books" >Books</option>
+                    <option value="Car & Moterbike" >Car & Moterbike</option>
+                    <option value="Clothing" >Clothing</option>
+                    <option value="Computer accessories" >Computer accessories</option>
+                    <option value="Gift cards" >Gift cards</option>
+                </select>
+                <input type="search" name="search" placeholder="Search Amazon.in" class="search-input">
+                <div class="search-icon flex">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <!-- box 4 -->
+            <div class="nav-signin border flex">
+                <span style="font-size: 0.75rem;">Hello, Sign in</span>
+                <p class="nav-second">Account & Lists</p>
+            </div>
+
+            <!-- box-5 -->
+            <div class="nav-return border flex">
+                <span style="font-size: 0.75rem;">Returns</span>
+                <p class="nav-second"> & Orders</p>
+            </div>
+
+
+            <!-- nav cart box -->
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                cart
+            </div>
+        </div>
+        
+        <!-- bottom nav -->
+        <div class="panel flex">
+            <div class="panel-all border">
+                <span>All</span>
+            </div>
+            <div class="panel-ops flex">
+                <p class="border"><a href="#">Today's Deals</a></p>
+                <p class="border"><a href="#">Customer Service</a></p>
+                <p class="border"><a href="#">Registry</a></p>
+                <p class="border"><a href="#">Gift Cards</a></p>
+                <p class="border"><a href="#">Sell</a></p>
+            </div>
+            <div class="panel-deals">
+                <p class="border"><a href="#">Shop deals in Electronics</a></p>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero section -->
+    <div class="hero-section flex">
+        <div class="hero-message flex">
+            <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">Click here to go to amazon.in</a></p>
+        </div>
+    </div>
+
+    <!-- shop section -->
+    <section class="shop-section">
+        <div class="box">
+            <div class="box-content">
+                <h2>Shop deals in Appliances</h2>
+                <div class="box-container ">
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box1.1_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center">Washing machine</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div  style="background-image: url('img/box1.2_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Air Conditioner</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box1.3_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Refrigerator</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box1.4_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Microwave</h5>
+                    </div>
+                </div>
+                <a href="#" >See more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2 >Shop deals in Fashion</h2>
+                <div class="box-container ">
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box3.1_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center">T-shirts</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div  style="background-image: url('img/box3.2_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Shoes</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box3.3_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center">Watches</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box3.4_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Bagpacks</h5>
+                    </div>
+                </div>
+                <a href="#" >See more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Laptops and Tablets</h2>
+                <div class="box-img" style="background-image: url('img/box1_image.jpeg');"></div>
+                <a href="#" >Shop now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Get exciting offers</h2>
+                <div class="box-container ">
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box6.1_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center">Get off on flight tickets</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div  style="background-image: url('img/box6.2_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Train booking</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box6.3_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center">Bus ticket booking</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box6.4_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Spin & Win</h5>
+                    </div>
+                </div>
+                <a href="#" >See more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Health & Personal Care</h2>
+                <div class="box-img" style="background-image: url('img/box2_image.jpg');"></div>
+                <a href="#" >Shop now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Home & Furniture</h2>
+                <div class="box-container ">
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box2.1_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center">Sofa chair</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div  style="background-image: url('img/box2.2_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Bed</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box2.3_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center">Wardrobe</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box2.4_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Sofa</h5>
+                    </div>
+                </div>
+                <a href="#" >See more</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Furniture</h2>
+                <div class="box-img" style="background-image: url('img/box3_image.jpg');"></div>
+                <a href="#" >Shop now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Gaming Accessories</h2>
+                <div class="box-container ">
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box4.1_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center">Tablet</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div  style="background-image: url('img/box4.2_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Gaming Laptop</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box4.3_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Gaming monitor</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box4.4_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Gaming tws</h5>
+                    </div>
+                </div>
+                <a href="#" >See more</a>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="box-content">
+                <!-- <h2>Beauty picks</h2> -->
+                <div class="box-img" style="background-image: url('img/asset\ 13.jpeg'); background-size: 100% 100%; height: 325px;"></div>
+                <a href="#">Discover more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Fashion trends you like</h2>
+                <div class="box-container ">
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box5.1_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center">Breezy Kurtas</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div  style="background-image: url('img/box5.2_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Dazzling Styles</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box5.3_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Trendsetting styles</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box5.4_image.jpeg');" class="mini-box"></div> 
+                        <!-- <h5 class="center" >Oven</h5> -->
+                    </div>
+                </div>
+                <a href="#" >See more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Beauty picks</h2>
+                <div class="box-img" style="background-image: url('img/box5_image.jpg');"></div>
+                <a href="#" >Shop now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Electronics</h2>
+                <div class="box-img" style="background-image: url('img/box4_image.jpg');"></div>
+                <a href="#" >Shop now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box-content">
+                <h2>Refresh your space</h2>
+                <div class="box-container ">
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box7.1_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center">Decor</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div  style="background-image: url('img/box7.2_image.jpg');" class="mini-box"></div> 
+                        <h5 class="center" >Home</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box7.3_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Home swing</h5>
+                    </div>
+                    <div class="sub-boxes">
+                        <div style="background-image: url('img/box7.4_image.jpeg');" class="mini-box"></div> 
+                        <h5 class="center" >Dining</h5>
+                    </div>
+                </div>
+                <a href="#" >See more</a>
+            </div>
+        </div>
+        
+        <div class="box">
+            <div class="box-content">
+                <h2>Shop Pet Supplies</h2>
+                <div class="box-img" style="background-image: url('img/box6_image.jpg');"></div>
+                <a href="#" >Shop now</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>New arrivals in Toys</h2>
+                <div class="box-img" style="background-image: url('img/box7_image.jpg');"></div>
+                <a href="#" >See more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Discover fashion trends</h2>
+                <div class="box-img" style="background-image: url('img/box8_image.jpg');"></div>
+                <a href="#" >Discover more</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- signin section -->
+    <section class="signin-section">
+        <div class="signin-content flex">
+            <p>See personalized recommendations</p>
+            <a href="#" class="primary-btn flex">Sign in</a>
+            <p>New customer? <a href="#">Start here.</a></p>
+        </div>
+    </section>
+
+    <!-- back to top section -->
+    <div class="upper-footer flex">
+        <a href="#">Back to top</a>
+    </div>
+
+    <footer class="middle-footer flex">
+        <div class="footer-lists">
+            <h4>Get to Know Us</h4>
+            <p><a href="#">Careers</a></p>
+            <p><a href="#">Blog</a></p>
+            <p><a href="#">About Amazon</a></p>
+            <p><a href="#">Investor Relations</a></p>
+            <p><a href="#">Amazon Devices</a></p>
+            <p><a href="#">Amazon Science</a></p>
+        </div>
+        <div class="footer-lists">
+            <h4>Make Money with Us</h4>
+            <p><a href="#">Sell products on Amazon</a></p>
+            <p><a href="#">Sell on Amazon Bussiness</a></p>
+            <p><a href="#">Sell apps on Amazon</a></p>
+            <p><a href="#">Become an Affiliate</a></p>
+            <p><a href="#">Become an Affiliate</a></p>
+            <p><a href="#">Host an Amazon Hub</a></p>
+            <p><a href="#">Self Publish with Us</a></p>
+            
+        </div>
+        <div class="footer-lists">
+            <h4>Amazon Payment Products</h4>
+            <p><a href="#">Amazon Bussiness CArd</a></p>
+            <p><a href="#">Shop with Points</a></p>
+            <p><a href="#">About Amazon</a></p>
+            <p><a href="#">Investor Relations</a></p>
+            <p><a href="#">Reload Your Balance</a></p>
+            <p><a href="#">Reload Your Balance</a></p>
+            <p><a href="#">Amazon Science</a></p>
+        </div>
+        <div class="footer-lists">
+            <h4>Let Us Help You</h4>
+            <p><a href="#">Amazon and COVID-19</a></p>
+            <p><a href="#">Your Account</a></p>
+            <p><a href="#">Your Orders</a></p>
+            <p><a href="#">Investor Relations</a></p>
+            <p><a href="#">Amazon Assistant</a></p>
+            <p><a href="#">Help</a></p>
+        </div>
+    </footer>
+
+    <section class="footer-section">
+        <div class="footer-content flex">
+            <div class="nav-logo">
+                <a href="#"><img src="img/amazon_logo.png" alt="amazon logo" width="100px"></a>
+            </div>
+            <a href="#" class="secondary-btn flex">English</a>
+            <a href="#" class="secondary-btn flex">United State</a>
+        </div>
+    </section>
+
+    <div class="bottom-footer">
+        <div class="terms-and-conditions flex">
+            <p><a href="#">Conditions of Use</a></p>
+            <p><a href="#">Privacy Notice</a></p>
+            <p><a href="#">Your ads Privacy choices</a></p>
+        </div>
+        <div class="copyright">
+            <p>&copy; 1996-2023,Amazon.com, Inc. or its affiliates</p>
+        </div>
+    </div>
+    <!-- <div class="spacer" style="height: 120vh;"></div> -->
+    
+</body>
+</html>
